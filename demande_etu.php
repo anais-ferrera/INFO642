@@ -1,11 +1,13 @@
 <?php
 include ("connexion_bdd.php");
 
-if (issett($_POST['des_demande']))
+if (isset($_POST['des_demande']))
 {
-	$sql="INSERT INTO Demande(description) VALUES '".$_POST['des_demande']."'";
+	$sql="INSERT INTO Demande (description) VALUES ('".$_POST['des_demande']."')";
 	$result = mysql_query($sql) or die("Requête invalide: ". mysql_error()."\n".$sql);
-}
+	$row = mysql_fetch_assoc($result);
+	$id_demande = $row["id"];
+
 echo "
 <html>
 
@@ -47,8 +49,10 @@ echo "
 
 <!--Bouton pour envoyer les donnees-->
 <input type='submit' value='Envoyer' />
-</form>
-
-";
+</form>";
+}
+else{
+	echo"Indiquer la description de votre demande";
+}
 
 ?>
