@@ -24,7 +24,7 @@
 <body>
 <h1>Connexion au site</h1>
 <form action='login.php' method='post'>
-Votre login : <input type='text' name='login'><br />
+Votre mail : <input type='text' name='login'><br />
 Votre mot de passe : <input type='password' name='pwd'><br />
 <input type='submit' value='Connexion'>
 </form>
