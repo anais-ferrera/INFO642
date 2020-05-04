@@ -12,5 +12,8 @@ if(isset($_POST['codeAPP']) and isset($_POST['fournisseur'])and isset($_POST['qu
 	echo'La demande a bien ete envoyee.';
 
 }
+else{
+	echo"Erreur, il manque des infos.";
+}
 
 ?>
