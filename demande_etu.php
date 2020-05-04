@@ -5,8 +5,11 @@ if (($_POST['des_demande'])!="")
 {
 	$sql="INSERT INTO Demande (description) VALUES ('".$_POST['des_demande']."')";
 	$result = mysql_query($sql) or die("Requête invalide: ". mysql_error()."\n".$sql);
+
+	$sql ="SELECT Demande.id_demande as id_demande FROM Demande WHERE Demande.description ='".$_POST['des_demande']."'";
+ 	$result = mysql_query($sql) or die("Requête invalide: ". mysql_error()."\n".$sql);
 	$row = mysql_fetch_assoc($result);
-	$id_demande = $row["id"];
+	$id_demande = $row["id_demande"];
 
 echo "
 <html>
