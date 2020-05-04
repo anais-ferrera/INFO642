@@ -1,0 +1,162 @@
+body{
+	overflow-x: hidden; 			/*masquer la barre de scroll du bas (selon x)*/
+	margin: 0;						/*pour que les bannières etc soient bien collées en (0;0)*/
+}
+
+
+#banniere1{
+	display: block; 				/*pour que ca apparaisse sous forme de "bloc"*/
+	background-color: #f6f6f6;
+	height: 70px ;					/*hauteur = 90 pixels*/
+	width: 100% ;					/*largeur = toute la page*/
+
+}
+
+
+#banniere1 p {						/*titre du site "aesthetic things*/
+	position: relative;				/*comme pour le footeur PLUS BAS*/
+	font-family: Arial, sans-serif;		/*police d'écriture*/
+	text-transform: uppercase;				/*ecrire en majuscule*/
+	font-weight: bold;				/*en gras le titre*/
+	font-size: 40px;				/*taille du titre*/
+	top: 12px;						
+	margin: 0;						/*pas d'espace blanc entre le haut de la page html et la bannière*/
+	text-align: center;				/*titre centré*/
+
+}
+
+
+#menu{
+	min-width: 500px;				/*largeur minimum autorisée sinon qd la page internet est trop petite ca devient dégueu*/
+	width: 100% ;					/*largeur = toute la page*/
+	height: 170px ;					/*hauteur = 100 pixels*/ 
+	position: relative;				/*pour pas que les élèments se barrent n'importe où*/
+	background-color: #00a3f0 ;
+}
+
+
+#menu ul{
+	float: left;					/*pour enlever le "margin" qui fonctionne pas ak margin:0, pour enlever l'espace vide entre la bannière1 et le menu*/
+	left: 50%;						/*pr que tt soit décallé de 50% sur la droite*/
+	position: relative;
+	padding-top: 40px; 				/*80HAUTEUR - pr que les cases du menu soient centrées (hauteur) ds le bandeau rose framboise*/
+	margin-left: -60px;		/*ETAPE 1 - coller les cases roses tt à gauche de la page html*/
+
+	line-height: 5px;
+
+}
+
+
+#menu ul li{
+	margin-left: 30px;				/*marge sur la gauche chaque elem de la liste séparé de 20px*/
+	float: left;					/*pour que les élèments de la liste soient à l'horizontale et non-plus à la verticale*/
+	list-style-type: none;			/*pour enlever les petits points devant chaque mot de la liste*/
+	position: relative;
+	left: -50%;				/*ETAPE 2 - centré les cases du menu*/
+}
+
+
+#menu ul li a{
+	text-align: center;				/*LARGEUR - aligner le texte ds les cases du menu*/
+	padding-top: 30px;				/*HAUTEUR - aligner le texte ds les cases du menu*/
+	display: inline-block;			/*permet de séparer en bloc, pr def largeur et hauteur*/
+	background-color: #185891 ;	/*couleur rose pale du bloc encadrant les mots du menu*/
+	height: 31px;				/* 30 hauteur des mots du menu*/
+	width: 230px;				/*100 largeur des mots du menu*/
+	color: white;					/*couleur des liens = noir*/
+	font-family: helvetica, sans-serif;		/*police d'écriture*/
+	text-transform: uppercase;
+	font-weight: bold;
+	text-decoration: none;			/*enlever les deco du texte (enleve le soulignage)*/
+}
+
+
+
+#menu ul li a:hover {				/*animation qd ak souris on va sur case menu*/
+	color: white;
+	background-color: #164976;
+	font-style: italic;
+}
+
+#menu ul li a:visited {				/*animation qd ak souris on va sur case menu*/ 
+	background-color: #184b78;
+}
+
+
+#banniere2{
+	display: block; 				/*pour que ca apparaisse sous forme de "bloc"*/
+	background-color: #f6f6f6;
+	height: 70px ;					/*hauteur = 90 pixels*/
+	width: 100% ;					/*largeur = toute la page*/
+
+}
+
+
+#contenu{
+	margin-top: 50px;
+	margin-bottom: 200px;
+	display: block;					/*pour que ca apparaisse sous forme de "bloc"*/
+	width: 900px;					
+	margin: auto;					/*pour que le texte soit centré au milieu de la page*/
+
+}
+
+#contenu h1{
+	margin-top: 150px;
+	font-weight: bold;				
+	font-family: helvetica, sans-serif;
+	text-transform: uppercase;
+	font-size: 35px;
+}
+
+#contenu h2{
+	margin-top: 75px;
+	font-weight: bold;				
+	font-family: helvetica, sans-serif;
+	font-size: 18px;
+}
+
+#contenu p{
+	font-family: Arial, sans-serif;
+	text-align: justify;				
+}
+
+
+
+
+
+#h1{
+	text-transform: uppercase;
+	font-weight: bold;
+	font-family: helvetica, sans-serif;
+}
+
+
+
+#footer{
+	text-align: center;
+	display: block;
+	background-color: #f6f6f6;
+	height: 70px;
+	width: 100%;
+	margin-top: 50%;
+}
+
+
+
+
+#footer p {
+	text-align: center;				
+	font-weight: bold;				/*texte en gras*/
+	font-family: helvetica, sans-serif;
+	position: relative;
+	top: 28px;						/* 18 descendre le texte de 10 pixels p/r à la hauteur ds le bandeau couleur taupe*/
+
+}
+#footer img {
+	position: relative;
+	top:43px;
+}
+
+
+
