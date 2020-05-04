@@ -1,0 +1,31 @@
+
+ul#etage2{
+  background-image: url("acy_1er_etage_700x721.png");
+  width: 700px;
+  height:721px;
+  padding: 0;
+  margin: 10px 0px 10px 10px;
+  position: relative;
+  list-style: none;
+}
+ul#etage2 li a{
+  position:absolute;
+  text-decoration: none;
+}
+ul#etage2 li#c206 a  { top: 38px; left: 7px; width: 66px; height: 73px; }
+ul#etage2 li#c207 a  { top: 38px; left: 76px; width: 65px; height: 73px; }
+ul#etage2 li#c208 a  { top: 38px; left: 145px; width: 49px; height: 73px; }
+ul#etage2 li#c209 a  { top: 38px; left: 198px; width: 47px; height: 73px; }
+ul#etage2 li#c210 a  { top: 38px; left: 250px; width: 44px; height: 73px; }
+ul#etage2 li#c213 a  { top: 38px; left: 360px; width: 82px; height: 73px; }
+ul#etage2 li#c214 a  { top: 38px; left: 447px; width: 82px; height: 73px; }
+ul#etage2 li#c215 a  { top: 38px; left: 533px; width: 82px; height: 73px; }
+ul#etage2 li a:hover {
+  background: rgba(255,180,123,0.5);
+}
+ul#etage2 li a span{
+  display: none;
+}
+ul#etage2 li a:hover span{
+  display:block;
+}

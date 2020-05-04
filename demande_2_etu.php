@@ -1,3 +1,4 @@
+  
 <?php
 //On inclut le fichier permettant de se connecter à la bdd
 include("connexion_bdd.php");
