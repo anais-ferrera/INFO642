@@ -24,25 +24,25 @@ echo "
 <p><label>Fournisseur</label> : <input type='text' name='fournisseur'/></p>
 
 <!--Zone de saisie de la quantite utile -->
-<p><label>Quantite utile</label> : <input type='number' name='quantiteUtil'/></p>
+<p><label>Quantite utile</label> : <input type='number' min='1' name='quantiteUtil'/></p>
 
 <!--Zone de saisie de la quantite commande -->
-<p><label>Quantite commande</label> : <input type='number' name='quantiteCommande'/></p>
+<p><label>Quantite commande</label> : <input type='number' min='1' name='quantiteCommande'/></p>
 
 <!--Zone de saisie du nom -->
 <p><label>Nom</label> : <input type='text' name='nom'/></p>
 
 <!--Zone de saisie du lien -->
-<p><label>Lien</label> : <input type='text' name='lien'/></p>
+<p><label>Lien</label> : <input type='url' name='lien'/></p>
 
 <!--Zone de saisie de la description -->
 <p><label>Description</label> : <input type='textarea' name='description'/></p>
 
 <!--Zone de saisie du prix unitaire TTC -->
-<p><label>Prix unitaire TTC</label> : <input type='number' name='puTTC'/></p>
+<p><label>Prix unitaire TTC</label> : <input type='number' min='0.01' step='0.01' name='puTTC'/></p>
 
 <!--Zone de saisie du montant TTC -->
-<p><label>Montant TTC</label> : <input type='number' name='montantTTC'/></p>
+<p><label>Montant TTC</label> : <input type='number' min='0.01' step='0.01' name='montantTTC'/></p>
 
 <!--Zone d'ajout du document -->
 <p><label>Document</label> : <input type='number' name='document'/></p>
