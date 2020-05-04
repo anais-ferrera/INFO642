@@ -1,7 +1,7 @@
 <?php
 include ("connexion_bdd.php");
 
-if (isset($_POST['des_demande']))
+if (($_POST['des_demande'])!="")
 {
 	$sql="INSERT INTO Demande (description) VALUES ('".$_POST['des_demande']."')";
 	$result = mysql_query($sql) or die("Requête invalide: ". mysql_error()."\n".$sql);
@@ -52,7 +52,7 @@ echo "
 </form>";
 }
 else{
-	echo"Indiquer la description de votre demande";
+	echo"Erreur, veuillez indiquer la description de votre demande.";
 }
 
 ?>
