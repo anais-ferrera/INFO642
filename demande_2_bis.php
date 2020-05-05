@@ -1,9 +1,11 @@
 <?php
 include ("connexion_bdd.php");
-	//$sql ="SELECT Demande.id_demande as id_demande FROM Demande WHERE Demande.id_demande ='".$_POST['id_demande']."'";
- 	//$result = mysql_query($sql) or die("Requête invalide: ". mysql_error()."\n".$sql);
-	//$row = mysql_fetch_assoc($result);
-	//$id_demande = $row["id_demande"];
+	
+	//on recupere l'id_demande qui correspond au dernier de la table demande (donc au plus grand)
+	$sql ="SELECT MAX(id_demande) as id_demande FROM Demande";
+	$result = mysql_query($sql) or die("Requête invalide: ". mysql_error()."\n".$sql);
+	$row = mysql_fetch_assoc($result);
+	$id_demande = $row["id_demande"];
 
 echo "
 <html>
@@ -12,7 +14,7 @@ echo "
 <form method='post' action ='demande_2_etu.php'>
 
 <!--Passage cache de l'id_demande -->
-<!-- <input type='hidden' name='id' value='$id_demande'> -->
+<input type='hidden' name='id' value='$id_demande'> 
 
 <!--Zone de saisie du code APP -->
 <p><label>Code APP</label> : <input type='text' name='codeAPP'/></p>

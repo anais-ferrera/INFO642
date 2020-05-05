@@ -1,16 +1,19 @@
 <?php
 include ("connexion_bdd.php");
 
+//On verifie qu'une description de demande a ete faite
 if (($_POST['des_demande'])!="")
 {
+	//On insere une nouvelle demande dans la base
 	$sql="INSERT INTO Demande (description) VALUES ('".$_POST['des_demande']."')";
 	$result = mysql_query($sql) or die("Requête invalide: ". mysql_error()."\n".$sql);
 
-	$sql ="SELECT Demande.id_demande as id_demande FROM Demande WHERE Demande.description ='".$_POST['des_demande']."'";
- 	$result = mysql_query($sql) or die("Requête invalide: ". mysql_error()."\n".$sql);
+	//On recupere l'id_demande de la derniere demande inseree
+	$sql ="SELECT id_demande FROM Demande WHERE id_demande=LAST_INSERT_ID()";
+	$result = mysql_query($sql) or die("Requête invalide: ". mysql_error()."\n".$sql);
 	$row = mysql_fetch_assoc($result);
 	$id_demande = $row["id_demande"];
-
+	
 echo "
 <html>
 
