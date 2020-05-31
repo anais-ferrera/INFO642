@@ -22,7 +22,7 @@
     </div> 
 
 
-    <div id="contenu">
+    <div id="formulaire">
 
     <h1>Formulaire d'identification</h1>
 <?php
@@ -42,6 +42,9 @@
 ?>
 
 </div>
+
+    <div id="banniere2">  
+    </div> 
  
 <div id="slider">
   <input type="radio" id="show_slide1" name="slider_commands">
@@ -64,7 +67,7 @@
     </figure>
 
     <figure id="slide3">
-      <img src="./images/geo.jpg" alt="transition">
+      <img src="./images/transition.jpg" alt="transition">
     </figure>
 
 
