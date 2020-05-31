@@ -3,7 +3,7 @@
 
 include("connexion_bdd.php");
 //On se connecte à la base de donnees et on verifie que le login et le motdepasse rentre existent bien
-$sql="SELECT utilisateur.login as login, utilisateur.motdepasse as mdp from utilisateur where utilisateur.login = '".$_POST['login']."' and utilisateur.motdepasse ='".$_POST['pwd']."'";
+$sql="SELECT Etudiant.mail as login, Etudiant.mdp as mdp from Etudiant where Etudiant.mail = '".$_POST['login']."' and Etudiant.mdp ='".$_POST['pwd']."'";
 $result = mysql_query($sql) or die("Requête invalide: ". mysql_error()."\n".$sql);
 $row = mysql_fetch_assoc($result);
 
@@ -24,7 +24,8 @@ if (isset($_POST['login']) && isset($_POST['pwd'])) {
 		$_SESSION['pwd'] = $_POST['pwd'];
 
 		// on redirige notre visiteur vers une page de notre section membre
-		header ('location: ');
+		header('location: /~ruellee/INFO642/etudiant.php');
+		
 	}
 	else {
 		// Le visiteur n'a pas été reconnu comme étant membre de notre site. On utilise alors un petit javascript lui signalant ce fait
