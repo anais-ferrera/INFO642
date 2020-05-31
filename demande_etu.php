@@ -5,6 +5,7 @@ include ("connexion_bdd.php");
 //On verifie qu'une description de demande a ete faite
 if (($_POST['des_demande'])!="")
 {
+
 	//On insere une nouvelle demande dans la base
 	$sql="INSERT INTO Demande (description) VALUES ('".$_POST['des_demande']."')";
 	$result = mysql_query($sql) or die("Requête invalide: ". mysql_error()."\n".$sql);
@@ -14,6 +15,15 @@ if (($_POST['des_demande'])!="")
 	$result = mysql_query($sql) or die("Requête invalide: ". mysql_error()."\n".$sql);
 	$row = mysql_fetch_assoc($result);
 	$id_demande = $row["id_demande"];
+
+	$sql2="SELECT id_etu FROM Etudiant WHERE mail='".$_SESSION['login']."'";
+	$result2 = mysql_query($sql2) or die("Requête invalide: ". mysql_error()."\n".$sql2);
+	$row2 = mysql_fetch_assoc($result2);
+	$id_etu = $row2["id_etu"];
+	
+	$sql3="INSERT INTO passe VALUES ($id_etu, $id_demande)";
+	$result3 = mysql_query($sql3) or die("Requête invalide: ". mysql_error()."\n".$sql3);
+
 	
 echo "
 <html>
@@ -69,7 +79,7 @@ echo "
 
 }
 else{
-	header("refresh:3;url=/~ruellee/INFO642/accueilEleve.php");
+	header("refresh:3;url=/~ruellee/INFO642/acceuilEleve.php");
 	echo"Erreur, veuillez indiquer la description de votre demande.";
 }
 
