@@ -2,15 +2,18 @@
 //On inclut le fichier permettant de se connecter à la bdd
 include("connexion_bdd.php");
 
+
 if(isset ($_POST['bouton_modifier'])){
 	if(($_POST['code_produit'])!="" and ($_POST['fournisseur_produit'])!="" and ($_POST['qteUtil_produit'])!="" and ($_POST['qteCommande_produit'])!="" and ($_POST['nom_produit'])!="" and ($_POST['lien_produit'])!="" and ($_POST['description_produit'])!="" and ($_POST['puTTC_produit'])!="" and ($_POST['montantTTC_produit'])!=""){
-
+	
+	header("refresh:3;url=etudiant.php");
 	$sql="UPDATE Produit SET CodeAPP='".$_POST['code_produit']."',fournisseur='".$_POST['fournisseur_produit']."',quantiteUtil='".$_POST['qteUtil_produit']."',quantiteCommande='".$_POST['qteCommande_produit']."',nom='".$_POST['nom_produit']."',lien='".$_POST['lien_produit']."',description='".$_POST['description_produit']."',puTTC='".$_POST['puTTC_produit']."',montantTTC='".$_POST['montantTTC_produit']."',id_demande='".$_POST['id_demande']."' WHERE id_produit = '".$_POST['id_produit']."'";
 	$result = mysql_query($sql) or die("Requête invalide: ". mysql_error()."\n".$sql);
 
 	echo'les modifications ont bien ete prises en compte';
 	}
 	else{
+	header("refresh:3;url=modif_etu.php");
 	echo"Erreur, il manque des infos.";
 }
 }
@@ -44,13 +47,15 @@ if(($_POST['codeAPP'])!="" and ($_POST['fournisseur'])!="" and ($_POST['quantite
 
 	//si envoi a ete selectionner on envoie les donnees dans la base de donnees
 	if (isset($_POST['bouton_envoie'])){
+		header("refresh:3;url=etudiant.php");
 		echo'La demande a bien ete envoyee.';
 	}
-
 }
 //Si tous les champs n'ont pas ete renseignes on indique une erreur
 else{
+	header("refresh:3;url=etudiant.php");
 	echo"Erreur, il manque des infos.";
+
 }
 }
 

@@ -18,7 +18,11 @@ echo '<label>Demandes faites</label> : <select name="demande">';
         echo '</select>';
 //Bouton qui permet de selectionner un capteur
 echo'<input type="submit" name="modifier" value="Modifier" />';
-
 echo'</form>';
+
+//Bouton pour retourner en arriere
+echo "<form action ='etudiant.php' method='post'>
+<input type='submit' value='Retour'>
+</form>";
 
 ?>

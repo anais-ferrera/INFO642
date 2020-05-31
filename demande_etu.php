@@ -59,10 +59,16 @@ echo "
 
 <!--Bouton pour envoyer les donnees-->
 <input type='submit' name='bouton_envoie' value='Envoyer' />
+</form>
 
+<!--Bouton pour retourner en arriere-->
+<form action ='etudiant.php' method='post'>
+<input type='submit' value='Retour'>
 </form>";
+
 }
 else{
+	header("refresh:3;url=etudiant.php");
 	echo"Erreur, veuillez indiquer la description de votre demande.";
 }
 

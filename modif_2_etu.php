@@ -22,7 +22,7 @@ $doc=$row["doc"];
 $id_demande=$_POST['demande'];
 
 //On cree un formulaire où on passe les donnees par la methode post
-echo "<form method='post' action ='demande_2_etu.php'>";
+echo '<form method="post" action ="demande_2_etu.php">';
 //Passage cache de l'id du produit
 echo"<input type='hidden' name='id_produit' value='$id_produit'>";
 echo"<input type='hidden' name='id_demande' value='$id_demande'>";
@@ -48,10 +48,12 @@ echo"<p><label>Prix unitaire TTC</label> : <input type='number' min='0.01' step=
 echo"<p><label>Montant TTC</label> : <input type='number' min='0.01' step='0.01' name='montantTTC_produit' value='$montantTTC'/></p>";
 //Bouton pour envoyer les donnees
 echo'<input type="submit" value="Modifier" />';
-//Bouton pour annuler
-echo'<input type="submit" value="Retour" />';
-echo "</form>";
+echo '</form>';
 
+//Bouton pour retourner en arriere
+echo"<form action ='etudiant.php' method='post'>
+<input type='submit' value='Retour'>
+</form>";
 
 
 
