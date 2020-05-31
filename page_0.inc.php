@@ -3,11 +3,8 @@
 <head>
 <title>Formulaire d'identification</title>
 </head>
-
 <body>
 <h1>Voici les demandes passées :</h1>
-
-
 </body>
 </html>\n";
 
@@ -21,7 +18,7 @@
 
     $result = mysql_query($sql) or die("Requête invalide: ". mysql_error()."\n".$sql);
 
-    echo "<table>";
+    echo "<table border='1'>";
          echo "<tr>";
             echo "<td><b>demandes</td></b>";
         echo"</tr>";
