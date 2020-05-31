@@ -7,6 +7,8 @@ include ("connexion_bdd.php");
 	$row = mysql_fetch_assoc($result);
 	$id_demande = $row["id_demande"];
 
+	
+
 echo "
 <html>
 
@@ -44,7 +46,7 @@ echo "
 <p><label>Montant TTC</label> : <input type='number' min='0.01' step='0.01' name='montantTTC'/></p>
 
 <!--Zone d'ajout du document -->
-<p><label>Document</label> : <input type='number' name='document'/></p>
+<!-- <p><label>Document</label> : <input type='file' name='document'/></p> -->
 
 <!--Bouton pour ajouter un element a la demande-->
 <input type='submit' name='ajout' value='Ajouter un autre element' />
@@ -53,4 +55,5 @@ echo "
 <input type='submit' name='bouton_envoie' value='Envoyer' />
 
 </form>";
+
 ?>
