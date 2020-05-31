@@ -20,7 +20,8 @@
 
     echo "<table border='1'>";
          echo "<tr>";
-            echo "<td><b>demandes</td></b>";
+            echo "<td><b>Demandes</td></b>";
+			echo "<td><b>Etat</td></b>";
         echo"</tr>";
         while ($row = mysql_fetch_assoc($result)) { 
            echo "<tr>";

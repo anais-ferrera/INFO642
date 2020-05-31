@@ -15,10 +15,10 @@
 
 	$login_valideE = $rowE['login'];
 	$login_valideP = $rowP['loginP'];
-	$login_valideST = $rowST['login'];
+	$login_valideST = $rowST['loginST'];
 	$pwd_valideE = $rowE['mdp'];
 	$pwd_valideP = $rowP['mdpP'];
-	$pwd_valideST = $rowST['mdp'];
+	$pwd_valideST = $rowST['mdpST'];
 
 
 
@@ -59,12 +59,12 @@
 		}
 		else {
 			// Le visiteur n'a pas été reconnu comme étant membre de notre site. On utilise alors un petit javascript lui signalant ce fait
+			header('location: /~ruellee/INFO642/accueil');
 			echo '<body onLoad="alert(\'Membre non reconnu...\')">';
-			// puis on le redirige vers la page d'accueil
-			echo '<meta http-equiv="refresh" content="0;URL=page_0.inc.php">';
 		}
 	}
 	else {
+		header('location: /~ruellee/INFO642/accueil');
 		echo 'Les variables du formulaire ne sont pas declarees.';
 	}
 ?>
