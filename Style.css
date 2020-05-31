@@ -135,33 +135,25 @@ body{
 	text-align: center;
 	display: block;
 	background-color: #f6f6f6;
-	height: 70px;
-	width: 100%;
-	margin-top: 50%;
 }
-
 
 
 
 #footer p {
 	text-align: center;				
-	font-weight: bold;				/*texte en gras*/
+	font-weight: bold;			
 	font-family: helvetica, sans-serif;
-	position: relative;
-	top: 28px;						/* 18 descendre le texte de 10 pixels p/r à la hauteur ds le bandeau couleur taupe*/
 
 }
 #footer img {
-	position: relative;
-	top:43px;
+	width: 500px;
+	height: 100px;
 }
 
 
 #formulaire {
 	text-align: center;			
 }
-
-
 
 
 /*    CAROUSEL     */
