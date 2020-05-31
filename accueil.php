@@ -85,15 +85,14 @@
 
 
 
-<section id="contact">
-                           <h2>Contact</h2>
-                           <address>
+<div id="contact">
+                           <h2>Un problème de connexion ? </h2>
+                           <b>Veuillez prendre contact avec les créatrices de ce site </b>
                            <ul>
                            <li>06 66 66 66 66</li>
                            <li><a href="mailto:lesmagiciennesIDU@gmail.com">lesmagiciennesIDU@gmail.com</a></li>
                            </ul>
-                           </address>
-</section>
+</div>
 
 
 

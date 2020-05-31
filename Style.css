@@ -123,8 +123,6 @@ body{
 
 
 
-
-
 #h1{
 	text-transform: uppercase;
 	font-weight: bold;
@@ -156,6 +154,11 @@ body{
 #footer img {
 	position: relative;
 	top:43px;
+}
+
+
+#formulaire {
+	text-align: center;			
 }
 
 
