@@ -24,7 +24,7 @@ if (isset($_POST['login']) && isset($_POST['pwd'])) {
 		$_SESSION['pwd'] = $_POST['pwd'];
 
 		// on redirige notre visiteur vers une page de notre section membre
-		header('location: /~ruellee/INFO642/etudiant.php');
+		header('location: /~ruellee/INFO642/acceuilEleve.php');
 		
 	}
 	else {
