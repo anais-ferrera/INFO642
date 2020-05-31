@@ -83,6 +83,9 @@
   </nav>
 </div>
 
+   
+    <div id="banniere2">  
+    </div> 
 
 
 <div id="contact">
