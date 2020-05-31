@@ -69,7 +69,7 @@ echo "
 
 }
 else{
-	header("refresh:3;url=/~ruellee/INFO642/acceuilEleve.php");
+	header("refresh:3;url=/~ruellee/INFO642/accueilEleve.php");
 	echo"Erreur, veuillez indiquer la description de votre demande.";
 }
 

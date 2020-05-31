@@ -4,10 +4,11 @@
 include("connexion_bdd.php");
 
 if(isset($_POST['valider'])){
-$sql="UPDATE Demande SET etat='enAttenteDuST' WHERE id_demande='".$_POST['id_demande']."'";
-$result = mysql_query($sql) or die("Requête invalide: ". mysql_error()."\n".$sql);
+	header("refresh:3;url=/~ruellee/INFO642/accueilProf?page=0");
+	$sql="UPDATE Demande SET etat='enAttenteDuST' WHERE id_demande='".$_POST['id_demande']."'";
+	$result = mysql_query($sql) or die("Requête invalide: ". mysql_error()."\n".$sql);
 
-echo'La demande a ete transmise au service technique';
+	echo'La demande a ete transmise au service technique';
 }
 else{
 //on recupere les differentes infos presentes dans la bdd correspondantes au capteur selectionne
