@@ -7,7 +7,7 @@ if (($_POST['des_demande'])!="")
 {
 
 	//On insere une nouvelle demande dans la base
-	$sql="INSERT INTO Demande (description) VALUES ('".$_POST['des_demande']."')";
+	$sql="INSERT INTO Demande (description,etat) VALUES ('".$_POST['des_demande']."','enAttenteEnseignant')";
 	$result = mysql_query($sql) or die("Requête invalide: ". mysql_error()."\n".$sql);
 
 	//On recupere l'id_demande de la derniere demande inseree
@@ -79,7 +79,7 @@ echo "
 
 }
 else{
-	header("refresh:3;url=/~ruellee/INFO642/acceuilEleve.php");
+	header("refresh:3;url=/~ruellee/INFO642/accueilEleve.php");
 	echo"Erreur, veuillez indiquer la description de votre demande.";
 }
 
