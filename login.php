@@ -24,7 +24,7 @@ if (isset($_POST['login']) && isset($_POST['pwd'])) {
 		$_SESSION['pwd'] = $_POST['pwd'];
 
 		// on redirige notre visiteur vers une page de notre section membre
-		header('location: /~ruellee/INFO642/acceuilEleve.php');
+		header('location: /~ruellee/INFO642/acceuilEleve');
 		
 	}
 	else {
@@ -38,3 +38,4 @@ else {
 	echo 'Les variables du formulaire ne sont pas declarees.';
 }
 ?>
+

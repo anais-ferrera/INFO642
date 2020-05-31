@@ -1,4 +1,5 @@
 <?php
+	session_start (); 
 include ("connexion_bdd.php");
 
 //On verifie qu'une description de demande a ete faite
@@ -62,13 +63,13 @@ echo "
 </form>
 
 <!--Bouton pour retourner en arriere-->
-<form action ='etudiant.php' method='post'>
+<form action ='acceuilEleve.php?page=1' method='post'>
 <input type='submit' value='Retour'>
 </form>";
 
 }
 else{
-	header("refresh:3;url=etudiant.php");
+	header("refresh:3;url=/~ruellee/INFO642/acceuilEleve.php");
 	echo"Erreur, veuillez indiquer la description de votre demande.";
 }
 

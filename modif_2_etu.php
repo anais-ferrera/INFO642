@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 //On inclut le fichier permettant de se connecter à la bdd
 include("connexion_bdd.php");
 
@@ -51,7 +51,7 @@ echo'<input type="submit" value="Modifier" />';
 echo '</form>';
 
 //Bouton pour retourner en arriere
-echo"<form action ='etudiant.php' method='post'>
+echo"<form action ='modif_etu.php' method='post'>
 <input type='submit' value='Retour'>
 </form>";
 

@@ -1,4 +1,4 @@
-<?php
+<?php 
   echo "<html>
 <head>
 <title>Formulaire d'identification</title>

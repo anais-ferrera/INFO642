@@ -1,4 +1,5 @@
-<?php
+<?php 
+session_start (); 
 include ("connexion_bdd.php");
 	
 	//on recupere l'id_demande qui correspond au dernier de la table demande (donc au plus grand)

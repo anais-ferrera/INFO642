@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 include ("connexion_bdd.php");
 
 //On selectionne le colonne nom de la table capteur
@@ -21,7 +21,7 @@ echo'<input type="submit" name="modifier" value="Modifier" />';
 echo'</form>';
 
 //Bouton pour retourner en arriere
-echo "<form action ='etudiant.php' method='post'>
+echo "<form action ='acceuilEleve.php?page=2' method='post'>
 <input type='submit' value='Retour'>
 </form>";
 
