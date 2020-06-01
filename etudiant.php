@@ -1,5 +1,5 @@
 <?php
-
+session_start ();
 echo" 
 </<!DOCTYPE html>
 <html>
@@ -20,9 +20,11 @@ echo"
 <form action ='modif_etu.php' method='post'>
 <input type='submit' value='Modifier une demande'>
 </form>
+<a href='membre.php'>Messagerie</a>
+
 
 </body>
 </html>";
-
+echo "'".$_SESSION['login']."'";
 
 ?>
