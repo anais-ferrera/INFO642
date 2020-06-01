@@ -141,11 +141,11 @@ body{
 #footer{
     text-align: center;
     display: block;
-    background-color: #f6f6f6;
     height: 70px;
     width: 100%;
     margin-top: 50%;
 }
+
 
 
 #footer p {
@@ -313,20 +313,47 @@ body{
 table {
 border: medium solid #6495ed;
 border-collapse: collapse;
-width: 50%;
+width: 33%;
 }
 th {
 font-family: monospace;
 border: thin solid #6495ed;
-width: 50%;
+width: 33%;
 padding: 5px;
 background-color: #D0E3FA;
 }
 td {
 font-family: sans-serif;
 border: thin solid #6495ed;
-width: 50%;
+width: 33%;
 padding: 5px;
 text-align: center;
 background-color: #ffffff;
+}
+
+h2{
+    font-weight: bold;
+    font-family: helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 35px;
+    color: #184b78;
+}
+
+#contenu h4{
+    font-size: 23px;
+    padding-top: 10px;
+
+}
+
+#deco p{
+    font-weight: bold;
+    font-family: helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 20px;
+    padding-top: 35px;
+    margin-bottom: -120px;
+}
+
+#deco h1{
+    font-size: 35px;
 }

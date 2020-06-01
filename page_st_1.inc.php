@@ -17,11 +17,10 @@ $result3 = mysql_query($sql3) or die("Requête invalide: ". mysql_error()."\n".$
 
 
 echo'<h1>Messagerie</h1>';
-echo'<div id="banniere2"></div>';
 echo '<form method="post" action="page_st_1.inc.post.php">';
 
 
-echo '<label><b>Destinataire</b></label> : <select name="mail">'; #menu deroulant
+echo '<p><label><b>Destinataire</b></label> : <select name="mail"></p>'; #menu deroulant
 while($row1 =mysql_fetch_assoc($result1)) {
             echo '<option value='.$row1["mail"].'>'.$row1["mail"].'</option>';
         }
@@ -32,8 +31,8 @@ while($row3 =mysql_fetch_assoc($result3)) {
             echo '<option value='.$row3["mail"].'>'.$row3["mail"].'</option>';
         }
         echo '</select>';
-echo'<p><label>Objet</label> : <input type="text" name="objet" /></p>';
-echo '<p><label>Corps</label> : <textarea name="corps"></textarea></p>';
+echo'<p><label><b>Objet</b></label> : <input type="text" name="objet" /></p>';
+echo '<p><label><b>Texte</b></label> : <textarea name="corps"></textarea></p>';
 echo '<input type="submit" name="envoyer" value="Envoyer" />'; 
 
 echo "</form>";
@@ -41,7 +40,7 @@ echo "</form>";
 echo "<br> </br>";
 echo "<br> </br>";
 
-echo "Boite de reception :";
+echo "<h2>Boite de reception :</h2>";
 
 $sql =  "SELECT Messages.expediteur as Expediteur, Messages.objet as Objet, Messages.corps as Message
          FROM Messages
@@ -74,7 +73,7 @@ echo "<br> </br>";
 echo "<br> </br>";
 
 
-echo "Messages envoyes :";
+echo "<h2>Messages envoyes :</h2>";
 
 $sql =  "SELECT Messages.destinataire as Destinataire, Messages.objet as Objet, Messages.corps as Message
          FROM Messages
@@ -102,9 +101,7 @@ $result = mysql_query($sql) or die("Requête invalide: ". mysql_error()."\n".$sq
     echo "</tbody>";    
         }    
     echo "</table>";
-    echo "<div id='footer'>";
-     echo " <p>Polytech Annecy-Chambéry - Module INFO642 - Base de données et Technologies web </p>";
-     echo "</div>";
+    
 
 
 ?>
