@@ -1,5 +1,5 @@
 <?php
-	//Anaïs Ferrera IDU3 
+	 
 
 	include("connexion_bdd.php");
 	//On se connecte à la base de donnees et on verifie que le login et le motdepasse rentres existent bien
@@ -34,7 +34,7 @@
 			$_SESSION['pwd'] = $_POST['pwd'];
 
 			// on redirige notre visiteur vers une page de notre section membre 
-			header('location: /~ruellee/INFO642/accueilEleve');
+			header('location: accueilEleve.php');
 		
 		}
 		elseif ($login_valideP == $_POST['login'] && $pwd_valideP == $_POST['pwd']){
@@ -45,7 +45,7 @@
 			$_SESSION['pwd'] = $_POST['pwd'];
 
 			// on redirige notre visiteur vers une page de notre section membre 
-			header('location: /~ruellee/INFO642/accueilProf');
+			header('location: accueilProf.php');
 		}
 		elseif ($login_valideST == $_POST['login'] && $pwd_valideST == $_POST['pwd']){
 			// dans ce cas, tout est ok, on peut démarrer notre session
@@ -55,16 +55,16 @@
 			$_SESSION['pwd'] = $_POST['pwd'];
 
 			// on redirige notre visiteur vers une page de notre section membre 
-			header('location: /~ruellee/INFO642/accueilST');
+			header('location: accueilST.php');
 		}
 		else {
 			// Le visiteur n'a pas été reconnu comme étant membre de notre site. On utilise alors un petit javascript lui signalant ce fait
-			header('location: /~ruellee/INFO642/accueil');
+			header('location: accueil.php');
 			echo '<body onLoad="alert(\'Membre non reconnu...\')">';
 		}
 	}
 	else {
-		header('location: /~ruellee/INFO642/accueil');
+		header('location: accueil.php');
 		echo 'Les variables du formulaire ne sont pas declarees.';
 	}
 ?>

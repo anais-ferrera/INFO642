@@ -17,27 +17,7 @@
 
 	<body>
 
-		<div id="banniere1ETU">
-			<p>Gestion des commandes</p>
-		</div>
-
-		<div id="menuETU">
-			<ul>
-				<li><a href="page_0.inc.php">Demande en cours</a></li>	<!-- sinon on voit plus "acceuil" ds le menu qd on est dans acceuil -->					
-				<li><a href="page_1.inc.php">Creer une demande</a></li>
-				<li><a href="page_2.inc.php">Modifier</a></li>
-				<li><a href="page_3.inc.php">Messagerie</a></li>
-				<li><a href="page_4.inc.php">Deconnexion</a>
-
-				</li>
-				
-			</ul>
-		</div>
-
-		<div id="banniere2ETU">	
-		</div>
 		
-
 		<div id="contenu">
 		<h1>Faire une demande </h1>
 		<form action ="demande_etu.php" method="post">

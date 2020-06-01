@@ -1,4 +1,5 @@
 <?php
+$login= $_SESSION["login"];
 echo'
 <!DOCTYPE html>
 <html>
@@ -13,25 +14,7 @@ echo'
 
   <body>
 
-    <div id="banniere1ETU">
-      <p>Gestion des commandes</p>
-    </div>
 
-    <div id="menuETU">
-      <ul>
-        <li><a href="page_0.inc.php">Demande en cours</a></li> <!-- sinon on voit plus "acceuil" ds le menu qd on est dans acceuil -->         
-        <li><a href="page_1.inc.php">Creer une demande</a></li>
-        <li><a href="page_2.inc.php">Modifier</a></li>
-        <li><a href="page_3.inc.php">Messagerie</a></li>
-        <li><a href="page_4.inc.php">Deconnexion</a>
-
-        </li>
-        
-      </ul>
-    </div>
-
-    <div id="banniere2ETU"> 
-    </div>
     
 
     <div id="contenu">
@@ -49,17 +32,15 @@ echo'
 
       include("connexion_bdd.php");
 
-        $sql =  "SELECT Demande.description as d_description, Demande.etat as d_etat 
-            FROM Demande,passe,Etudiant 
-            where Demande.id_demande=passe.id_demande 
-            and 1=passe.id_etu";
+        $sql =  "SELECT Demande.description as d_description, Demande.etat as d_etat FROM Demande,passe,Etudiant where Demande.id_demande=passe.id_demande and Etudiant.id_etu=passe.id_etu and Etudiant.mail='".$login."' ";
 
 
         $result = mysql_query($sql) or die("Requête invalide: ". mysql_error()."\n".$sql);
 
         echo "<table border='1'>";
           echo "<tr>";
-            echo "<td><b>demandes</td></b>";
+            echo "<td><b>Demandes</td></b>";
+            echo "<td><b>Etat</td></b>";
           echo"</tr>";
           while ($row = mysql_fetch_assoc($result)) { 
             echo "<tr>";

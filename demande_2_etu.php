@@ -37,7 +37,7 @@ else{
 		
 		//si le bouton ajout a ete selectionne alors on le redirige vers la page qui permet cet ajout
 		if (isset($_POST['ajout'])){
-			header('Location : /~ruellee/INFO642/demande_2_bis.php');
+			header('location: demande_2_bis.php');
 			exit();
 		}
 

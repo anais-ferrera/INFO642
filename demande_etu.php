@@ -57,13 +57,13 @@ echo "
 <input type='submit' name='bouton_envoie' value='Envoyer' />
 </form>
 <!--Bouton pour retourner en arriere-->
-<form action ='acceuilEleve.php?page=1' method='post'>
+<form action ='accueilEleve.php?page=1' method='post'>
 <input type='submit' value='Retour'>
 </form>";
 
 }
 else{
-	header("refresh:3;url=/~ruellee/INFO642/accueilEleve.php");
+	header("refresh:3;url=accueilEleve.php");
 	echo"Erreur, veuillez indiquer la description de votre demande.";
 }
 

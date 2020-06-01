@@ -21,7 +21,7 @@ echo'<input type="submit" name="modifier" value="Modifier" />';
 echo'</form>';
 
 //Bouton pour retourner en arriere
-echo "<form action ='acceuilEleve.php?page=2' method='post'>
+echo "<form action ='accueilEleve.php?page=2' method='post'>
 <input type='submit' value='Retour'>
 </form>";
 

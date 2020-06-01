@@ -56,14 +56,4 @@ echo"<form action ='modif_etu.php' method='post'>
 </form>";
 
 
-
-
-
-
-
-
-
-
-
-
 ?>

@@ -15,12 +15,15 @@
 	<body>
   
 		<div id="fond">
+			<div id="banniere1ETU">
+      	<p>Gestion des commandes</p>
+    	</div>
   
 			<div id="titre">
 				<span> <H2>Bienvenue dans votre espace personnel</H2></span>
 			</div>
   
-			<div id="menu">
+			<div id="menuETU">
 			    <ul id="lemenu">
 					<?php
 					$encours = array(" "," "," "," "," ");
@@ -49,9 +52,6 @@
 				?>
 			</div>
   
-			<div id="pied">
-				<span>Polytech Annecy-Chambéry - Module IGI642- Base de données et Technologies web</span>
-			</div>
  
 		</div>
   
