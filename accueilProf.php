@@ -15,9 +15,13 @@
 	<body>
   
 		<div id="fond">
+			<div id="banniere1">
+      	<p>Gestion des commandes</p>
+    	</div>
+  
   
 			<div id="titre">
-				<span> <H2>Bienvenue dans votre espace personnel</H2></span>
+				<span> <h2>Bienvenue dans votre espace personnel</h2></span>
 			</div>
   
 			<div id="menu">
@@ -47,8 +51,8 @@
 				?>
 			</div>
   
-			<div id="pied">
-				<span>Polytech Annecy-Chambéry - Module IGI642- Base de données et Technologies web</span>
+			<div id="footer">
+				<p><span>Polytech Annecy-Chambéry - Module IGI642- Base de données et Technologies web</span></p>
 			</div>
  
 		</div>

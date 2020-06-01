@@ -50,8 +50,8 @@ else{
 	}
 	//Si tous les champs n'ont pas ete renseignes on indique une erreur
 	else{
-		header("refresh:3;url=accueilEleve.php?page=1");
-		echo"Erreur, il manque des infos.";
+		header("location:javascript://history.go(-1)");
+
 
 	}
 }

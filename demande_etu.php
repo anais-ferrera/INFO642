@@ -1,5 +1,33 @@
 <?php
 session_start (); 
+
+
+echo'
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="Style.css" />
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+      <title>Demande en cours</title>
+  </head>
+
+
+  <body>
+
+
+    <div id="banniere1ETU">
+      	<p>Gestion des commandes</p>
+    	</div>
+  
+			<div id="titre">
+				<span> <H3>Produit de votre demande</H3></span>
+			</div>
+
+    <div id="contenu">';
+
+
 include ("connexion_bdd.php");
 
 //On verifie qu'une description de demande a ete faite
@@ -56,10 +84,18 @@ echo "
 <!--Bouton pour envoyer les donnees-->
 <input type='submit' name='bouton_envoie' value='Envoyer' />
 </form>
-<!--Bouton pour retourner en arriere-->
-<form action ='accueilEleve.php?page=1' method='post'>
-<input type='submit' value='Retour'>
-</form>";
+</div>
+    
+
+    <div id='footer'>
+      <p>Polytech Annecy-Chambéry - Module INFO642 - Base de données et Technologies web </p>
+
+    </div>
+
+  </body>
+
+
+</html>";
 
 }
 else{
