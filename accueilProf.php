@@ -13,16 +13,15 @@
     </head>
   
 	<body>
+
+
   
 		<div id="fond">
 			<div id="banniere1">
+				
       	<p>Gestion des commandes</p>
     	</div>
   
-  
-			<div id="titre">
-				<span> <h2>Bienvenue dans votre espace personnel</h2></span>
-			</div>
   
 			<div id="menu">
 			    <ul id="lemenu">
@@ -42,6 +41,8 @@
 					?> 
 				</ul>
 			</div>
+			<div id="banniere2">
+			</div>
   
 			<div id="contenu">
 				<?php
@@ -51,11 +52,12 @@
 				?>
 			</div>
   
-			<div id="footer">
-				<p><span>Polytech Annecy-Chambéry - Module IGI642- Base de données et Technologies web</span></p>
-			</div>
+			
  
 		</div>
+		<div id="footer">
+				<p>Polytech Annecy-Chambéry - Module IGI642- Base de données et Technologies web</p>
+			</div>
   
 	</body>
 </html>

@@ -20,9 +20,7 @@
       	<p>Gestion des commandes</p>
     	</div>
   
-			<div id="titre">
-				<span> <H2>Bienvenue dans votre espace personnel</H2></span>
-			</div>
+		
   
 			<div id="menu">
 			    <ul id="lemenu">
@@ -41,6 +39,8 @@
 					echo "<li><a href=\"?page=2\" class=\"btn_menu $encours[2]\">Deconnexion</a></li> \n";   
 					?> 
 				</ul>
+			</div>
+			<div id="banniere2">
 			</div>
   
 			<div id="contenu">
