@@ -13,7 +13,7 @@ $result2 = mysql_query($sql2) or die("Requête invalide: ". mysql_error()."\n".$
 $sql3 =" SELECT mail FROM Enseignant";
 $result3 = mysql_query($sql3) or die("Requête invalide: ". mysql_error()."\n".$sql3);
 
-
+echo'<h1>Messagerie</h1>';
 echo'<div id="banniere2"></div>';
 echo '<form method="post" action="page_3.inc.post.php">';
 

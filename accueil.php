@@ -15,68 +15,68 @@
    <div id="banniere1">
       <p>Gestion des commandes</p>
     </div>
-    <div id="menu">
+    <div id="menuACCUEIL">
     </div>
     <div id="banniere2">  
     </div> 
     <div id="formulaire">
     <h1>Formulaire d'identification</h1>
 <form action='login.php' method='post'>
-Votre login : <input type='text' name='login'><br />
-Votre mot de passe : <input type='password' name='pwd'><br />
-<input type='submit' value='Connexion'>
+<h2>Login / email <input type='text' name='login'></h2>
+<h2>Mot de passe <input type='password' name='pwd'></h2>
+<h3><input type='submit' value='Connexion'></h3>
 </form>
   </div>
-    <div id="banniere2">  
+    <div id="banniere3">  
     </div> 
 <div class="container">
-  <div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
-      <li data-target="#myCarousel" data-slide-to="3"></li>
-    </ol>
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner">
-      <div class="item active">
-        <img src="./images/photo_lac_annecy2.jpg" alt="lac" style="width:100%;">
-        <div class="carousel-caption">
-          <h3>Le lac d'Annecy</h3>
+
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <!-- Wrapper for slides -->
+
+        <div class="carousel-inner">
+
+          <div class="item active">
+            <img src="./images/photo_lac_annecy2.jpg" alt="lac" style="width:100%;">
+            <div class="carousel-caption">
+              <h3>Le lac d'Annecy</h3>
+            </div>
+          </div>
+
+          <div class="item">
+            <img src="./images/photo_montagnes2.jpg" alt="montagnes" style="width:100%;">
+            <div class="carousel-caption">
+              <h3>Les montagnes d'Annecy</h3>
+            </div>
+          </div>
+
+          <div class="item">
+            <img src="./images/photo_lac_annecy.jpg" alt="lac" style="width:100%;">
+            <div class="carousel-caption">
+              <h3>Le lac d'Annecy</h3>
+            </div>
+          </div>
+
         </div>
+
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+          <span class="sr-only">Next</span>
+        </a>
       </div>
-      <div class="item">
-        <img src="./images/photo_montagnes2.jpg" alt="montagnes" style="width:100%;">
-        <div class="carousel-caption">
-        </div>
-      </div>
-      <div class="item">
-        <img src="./images/photo_lac_annecy.jpg" alt="lac" style="width:100%;">
-        <div class="carousel-caption">
-          <h3>Le lac d'Annecy</h3>
-        </div>
-      </div>
-    
-      <div class="item">
-        <img src="./images/photo_montagnes2.jpg" alt="montagnes" style="width:100%;">
-        <div class="carousel-caption">
-        </div>
-      </div>
-  
     </div>
-    <!-- Left and right controls -->
-    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right"></span>
-      <span class="sr-only">Next</span>
-    </a>
-  </div>
-</div>
-    <div id="banniere2">  
+    <div id="banniere4">  
     </div> 
 <div id="contact">
                            <h2>Un problème de connexion ? </h2>
@@ -90,9 +90,10 @@ Votre mot de passe : <input type='password' name='pwd'><br />
     </div> 
 
 <div id="footer2">
-      <p>Polytech Annecy-Chambéry - Module INFO642 - Base de données et Technologies web </p>
       <img src="./images/logo.jpg" />
-      </p>
+      <p>Polytech Annecy-Chambéry - Module INFO642 - Base de données et Technologies web </p>
+      
+      
 </div>
 </body>
 </html>

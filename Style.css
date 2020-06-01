@@ -11,6 +11,7 @@ body{
     width: 100% ;                   /*largeur = toute la page*/
 }
 #banniere1ETU{display: block;background-color: #f6f6f6;height: 70px ;width: 100% ;}
+#banniere1ACCUEIL{display: block;background-color: #f6f6f6;height: 100px ;width: 100% ;}
 
 
 #banniere1 p {                      /*titre du site*/
@@ -25,6 +26,8 @@ body{
 }
 #banniere1ETU p {position: relative;font-family: Arial, sans-serif;text-transform: 
     uppercase;font-weight: bold;font-size: 40px;top: 12px;margin: 0;text-align: center;}
+#banniere1ACCUEIL p {position: relative;font-family: Arial, sans-serif;text-transform: 
+    uppercase;font-weight: bold;font-size: 40px;top: 20px;margin: 0;text-align: center;}
 
 #menu{
     min-width: 500px;               /*largeur minimum autorisée sinon qd la page internet est trop petite ca devient dégueu*/
@@ -34,6 +37,7 @@ body{
     background-color: #00a3f0 ;
 }
 #menuETU{min-width: 500px;width: 100% ;height: 170px ;position: relative;background-color: #00a3f0 ;}
+#menuACCUEIL{min-width: 500px;width: 100% ;height: 170px ;position: relative;background-color: #00a3f0 ;}
 
 #menu ul{
     float: left;                    /*pour enlever le "margin" qui fonctionne pas ak margin:0, pour enlever l'espace vide entre la bannière1 et le menu*/
@@ -93,7 +97,7 @@ body{
     width: 100% ;                   /*largeur = toute la page*/
 }
 #banniere2ETU{display: block;background-color: #f6f6f6;height: 70px ;width: 100% ;}
-
+#banniere2ACCUEIL{display: block;background-color: #f6f6f6;height: 70px ;width: 100% ;}
 
 #contenu{
     margin-top: 50px;
@@ -158,7 +162,7 @@ body{
 #footer2{
     text-align: center;
     display: block;
-    background-color: #f6f6f6;
+    background-color: white;
 }
 
 
@@ -169,11 +173,45 @@ body{
 
 }
 
-
-#formulaire {
-    text-align: center;         
+#footer2 img{
+    position: relative;
+    text-align: center;
+    width:20%;                      /*image agrandit*/
+    padding: 15px;                  /*marge blanche autour image*/
 }
 
+
+#formulaire h1{
+    font-weight: bold;              
+    font-family: helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 25px;
+    padding-top: 60px;
+    padding-bottom: 15px;
+    text-align: center;
+    color: #184b78;
+}
+
+
+#formulaire h2{
+    font-size: 15px;
+    text-align: center;
+}
+
+
+#formulaire h3{
+    font-size: 23px;
+    padding-top: 10px;
+    text-align: center;
+    padding-bottom: 60px;
+    
+}
+
+
+#banniere3{display: block;background-color: #f6f6f6;height: 70px ;width: 100% ; margin-bottom: 6%;}
+#banniere4{display: block;background-color: #f6f6f6;height: 70px ;width: 100% ;margin-top: 6%;}
+
+#contact{margin-left: 5%; margin-top: 40px; margin-bottom: 40px;}
 
 /*RESPONSIVE POUR LES ETUDIANTS - 5 ONGLETS*/
 

@@ -12,6 +12,7 @@ include("connexion_bdd.php");
 echo'<title>Messagerie</title>';
 echo'<div id="banniere2"></div>';
 
+
 if (isset($_POST['mail']) and isset($_POST['objet']) and isset($_POST['corps'])){
 
 	echo"<br><b>Le message a ete envoye<b></br>";
@@ -26,7 +27,7 @@ else{
 	echo"Erreur! ";
 }
 
-echo "<input type=button onclick=window.location.href='http://tp-epu.univ-savoie.fr/~ferreraa/INFO642/accueilEleve.php?page=3'; value= Revenir />";
+echo "<input type=button onclick=window.location.href='http://tp-epu.univ-savoie.fr/~ferreraa/INFO642/accueilProf.php?page=1'; value= Revenir />";
 
 echo "<div id='footer'>";
 echo " <p>Polytech Annecy-Chambéry - Module INFO642 - Base de données et Technologies web </p>";
