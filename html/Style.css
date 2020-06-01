@@ -153,6 +153,33 @@ body{
 }
 
 
+/*pied de page pour la page accueil*/
+
+#footer2{
+	text-align: center;
+	display: block;
+	background-color: #f6f6f6;
+}
+
+
+
+#footer2 p {
+	text-align: center;				
+	font-weight: bold;			
+	font-family: helvetica, sans-serif;
+
+}
+#footer2 img {
+	width: 500px;
+	height: 100px;
+}
+
+
+#formulaire {
+	text-align: center;			
+}
+
+
 /*RESPONSIVE POUR LES ETUDIANTS - 5 ONGLETS*/
 
 /*Version 7 : 4 onglets sur 1 ligne et 1 sur la deuxieme ligne*/
