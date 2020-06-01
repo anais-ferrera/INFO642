@@ -1,0 +1,270 @@
+body{
+    overflow-x: hidden;             /*masquer la barre de scroll du bas (selon x)*/
+    margin: 0;                      /*pour que les bannières etc soient bien collées en (0;0)*/
+}
+
+
+#banniere1{
+    display: block;                 /*pour que ca apparaisse sous forme de "bloc"*/
+    background-color: #f6f6f6;
+    height: 70px ;                  /*hauteur*/
+    width: 100% ;                   /*largeur = toute la page*/
+}
+#banniere1ETU{display: block;background-color: #f6f6f6;height: 70px ;width: 100% ;}
+
+
+#banniere1 p {                      /*titre du site*/
+    position: relative;             /*comme pour le footeur PLUS BAS*/
+    font-family: Arial, sans-serif;     /*police d'écriture*/
+    text-transform: uppercase;              /*ecrire en majuscule*/
+    font-weight: bold;              /*en gras le titre*/
+    font-size: 40px;                /*taille du titre*/
+    top: 12px;                      
+    margin: 0;                      /*pas d'espace blanc entre le haut de la page html et la bannière*/
+    text-align: center;             /*titre centré*/
+}
+#banniere1ETU p {position: relative;font-family: Arial, sans-serif;text-transform: 
+    uppercase;font-weight: bold;font-size: 40px;top: 12px;margin: 0;text-align: center;}
+
+#menu{
+    min-width: 500px;               /*largeur minimum autorisée sinon qd la page internet est trop petite ca devient dégueu*/
+    width: 100% ;                   /*largeur = toute la page*/
+    height: 170px ;                 /*hauteur*/ 
+    position: relative;             /*pour pas que les élèments se barrent n'importe où*/
+    background-color: #00a3f0 ;
+}
+#menuETU{min-width: 500px;width: 100% ;height: 170px ;position: relative;background-color: #00a3f0 ;}
+
+#menu ul{
+    float: left;                    /*pour enlever le "margin" qui fonctionne pas ak margin:0, pour enlever l'espace vide entre la bannière1 et le menu*/
+    left: 50%;                      /*pr que tt soit décallé de 50% sur la droite*/
+    position: relative;
+    padding-top: 40px;              /*HAUTEUR - pr que les cases du menu soient centrées (hauteur) ds le bandeau*/
+    margin-left: -60px;     /*ETAPE 1 - coller les cases roses tt à gauche de la page html*/
+    line-height: 5px;
+}
+#menuETU ul{float: left;left: 50%;position: relative;padding-top: 40px;margin-left: -60px;line-height: 5px;}
+
+
+#menu ul li{
+    margin-left: 30px;              /*marge sur la gauche chaque elem de la liste séparé de ...px*/
+    float: left;                    /*pour que les élèments de la liste soient à l'horizontale et non-plus à la verticale*/
+    list-style-type: none;          /*pour enlever les petits points devant chaque mot de la liste*/
+    position: relative;
+    left: -50%;             /*ETAPE 2 - centré les cases du menu*/
+}
+#menuETU ul li{margin-left: 30px;float: left;list-style-type: none;position: relative;left: -50%;}
+
+
+#menu ul li a{
+    text-align: center;             /*LARGEUR - aligner le texte ds les cases du menu*/
+    padding-top: 30px;              /*HAUTEUR - aligner le texte ds les cases du menu*/
+    display: inline-block;          /*permet de séparer en bloc, pr def largeur et hauteur*/
+    background-color: #185891;  /*couleur rose pale du bloc encadrant les mots du menu*/
+    height: 31px;               /* 30 hauteur des mots du menu*/
+    width: 230px;               /*100 largeur des mots du menu*/
+    color: white;                   /*couleur des liens = noir*/
+    font-family: helvetica, sans-serif;     /*police d'écriture*/
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;          /*enlever les deco du texte (enleve le soulignage)*/
+}
+#menuETU ul li a{text-align: center;padding-top: 30px;display: inline-block;background-color: #185891;
+    height: 31px;width: 230px;color: white;font-family: helvetica, sans-serif;
+    text-transform: uppercase;font-weight: bold;text-decoration: none;}
+
+
+#menu ul li a:hover {               /*animation qd ak souris on va sur case menu*/
+    color: white;
+    background-color: #164976;
+    font-style: italic;
+}
+#menuETU ul li a:hover {color: white;background-color: #164976;font-style: italic;}
+
+#menu ul li a:visited {             /*animation qd ak souris on va sur case menu*/ 
+    background-color: #184b78;
+}
+#menuETU ul li a:visited {background-color: #184b78;}
+
+#banniere2{
+    display: block;                 /*pour que ca apparaisse sous forme de "bloc"*/
+    background-color: #f6f6f6;
+    height: 70px ;                  /*hauteur*/
+    width: 100% ;                   /*largeur = toute la page*/
+}
+#banniere2ETU{display: block;background-color: #f6f6f6;height: 70px ;width: 100% ;}
+
+
+#contenu{
+    margin-top: 50px;
+    margin-bottom: 200px;
+    display: block;                 /*pour que ca apparaisse sous forme de "bloc"*/
+    width: 900px;                   
+    margin: auto;                   /*pour que le texte soit centré au milieu de la page*/
+}
+
+
+#contenu h1{
+    margin-top: 150px;
+    font-weight: bold;              
+    font-family: helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 35px;
+}
+
+
+#contenu h2{
+    margin-top: 75px;
+    font-weight: bold;              
+    font-family: helvetica, sans-serif;
+    font-size: 18px;
+}
+
+
+#contenu p{
+    font-family: Arial, sans-serif;
+    text-align: justify;                
+}
+
+
+#h1{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: helvetica, sans-serif;
+}
+
+
+#footer{
+    text-align: center;
+    display: block;
+    background-color: #f6f6f6;
+    height: 70px;
+    width: 100%;
+    margin-top: 50%;
+}
+
+
+#footer p {
+    text-align: center;             
+    font-weight: bold;              /*texte en gras*/
+    font-family: helvetica, sans-serif;
+    position: relative;
+    top: 28px;                      /* 18 descendre le texte de 10 pixels p/r à la hauteur ds le bandeau couleur taupe*/
+}
+
+
+/*pied de page pour la page accueil*/
+
+#footer2{
+    text-align: center;
+    display: block;
+    background-color: #f6f6f6;
+}
+
+
+#footer2 p {
+    text-align: center;             
+    font-weight: bold;          
+    font-family: helvetica, sans-serif;
+
+}
+
+
+#formulaire {
+    text-align: center;         
+}
+
+
+/*RESPONSIVE POUR LES ETUDIANTS - 5 ONGLETS*/
+
+/*Version 7 : 4 onglets sur 1 ligne et 1 sur la deuxieme ligne*/
+@media screen and (max-width : 1350px){
+    #banniere1ETU{height: 70px;}
+    #menuETU{height: 200px;}
+    #menuETU ul{padding-top: 7px;}
+    #menuETU ul li{padding-left: 10%;padding-top: 10px;}
+}
+
+/*Version 6 : 4 onglets sur 1 ligne et 1 sur la deuxieme ligne*/
+@media screen and (max-width : 1300px){
+    #banniere1ETU{height: 70px;}
+    #menuETU{height: 200px;}
+    #menuETU ul{padding-top: 7px;}
+    #menuETU ul li{padding-left: 7%;padding-top: 10px;}
+}
+
+/*Version 5 : 3 onglets sur 1 ligne et 2 sur la deuxieme ligne*/
+@media screen and (max-width : 1037px){
+    #banniere1ETU{height: 70px;}
+    #menuETU{height: 200px;}
+    #menuETU ul{padding-top: 7px;}
+    #menuETU ul li{padding-left: 4%;padding-top: 10px;}
+}
+
+/*Version 4 : */
+@media screen and (max-width : 900px){
+    #banniere1ETU{height: 70px;}
+    #menuETU{height: 388px;}    
+    #menuETU ul{padding-top: 7px;}
+    #menuETU ul li{padding-left: 33%;padding-top: 6px;  margin-left: 30px;}
+    #banniere2ETU{height: 70px;}
+}
+
+/*Version 3 : */
+@media screen and (max-width : 630px){
+    #banniere1ETU{height: 70px;}
+    #menuETU{height: 390px;}    
+    #menuETU ul{padding-top: 10px;}
+    #menuETU ul li{padding-left: 30%;padding-top: 1%;   margin-left: 30px;}
+    #banniere2ETU{height: 70px;}
+}
+
+/*Version 2 : */
+@media screen and (max-width : 568px){
+    #banniere1ETU{height: 115px;}
+    #menuETU{height: 398px;}    
+    #menuETU ul{padding-top: 1px;}
+    #menuETU ul li{padding-left: 27%;padding-top: 10px; margin-left: 30px;}
+    #banniere2ETU{height: 30px;}
+}
+
+/*Version 1 : fenetre minimale*/
+@media screen and (max-width : 500px){
+    #banniere1ETU{height: 115px;}
+    #menuETU{height: 390px;}    
+    #menuETU ul{padding-top: 10px;}
+    #menuETU ul li{padding-left: 20%;padding-top: 1%;margin-left: 30px;}
+    #banniere2ETU{height: 30px;}
+}
+
+/*RESPONSIVE POUR LES AUTRES - 3 ONGLETS*/
+
+/*Version 4 : */
+@media screen and (max-width : 800px){
+    #banniere1{height: 70px;}
+    #menu{height: 255px;}   
+    #menu ul{padding-top: 7px;}
+    #menu ul li{padding-left: 33%;padding-top: 6px; margin-left: 30px;}
+    #banniere2{height: 70px;}
+}
+
+
+
+/*Version 2 : */
+@media screen and (max-width : 550px){
+    #banniere1{height: 115px;}
+    #menu{height: 255px;}   
+    #menu ul{padding-top: 1px;}
+    #menu ul li{padding-left: 27%;padding-top: 10px;    margin-left: 30px;}
+    #banniere2{height: 30px;}
+}
+
+/*Version 1 : fenetre minimale*/
+@media screen and (max-width : 500px){
+    #banniere1{height: 115px;}
+    #menu{height: 255px;}   
+    #menu ul{padding-top: 10px;}
+    #menu ul li{padding-left: 22%;padding-top: 1%;margin-left: 30px;}
+    #banniere2{height: 30px;}
+}
+© 2
