@@ -37,7 +37,7 @@ echo'
        echo'</tr>';
     }
     echo'</table>';
-$sql2 ="SELECT id_demande, etat FROM Demande WHERE etat = 'En cours'";
+$sql2 ="SELECT id_demande, etat FROM Demande WHERE etat = 'enAttenteEnseignant'";
 $result2 = mysql_query($sql2) or die("Requête invalide: ". mysql_error()."\n".$sql);
     echo '<label>Selectionner une demande</label> : <select name="demande" size="1">';
     while($row2 =mysql_fetch_assoc($result2)) {

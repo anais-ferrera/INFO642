@@ -1,4 +1,5 @@
 <?php 
+  $login= $_SESSION["login"];
   echo "<html>
 <head>
 <title>Formulaire d'identification</title>
@@ -10,10 +11,7 @@
 
     include("connexion_bdd.php");
 
-    $sql =  "SELECT Demande.description as d_description, Demande.etat as d_etat 
-            FROM Demande,passe,Etudiant 
-            where Demande.id_demande=passe.id_demande 
-            and 1=passe.id_etu";
+    $sql =  "SELECT Demande.description as d_description, Demande.etat as d_etat FROM Demande,passe,Etudiant where Demande.id_demande=passe.id_demande and Etudiant.id_etu=passe.id_etu and Etudiant.mail='".$login."' ";
 
 
     $result = mysql_query($sql) or die("Requête invalide: ". mysql_error()."\n".$sql);
