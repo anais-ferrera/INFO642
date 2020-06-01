@@ -19,11 +19,11 @@ echo'
 
     <div id="menuETU">
       <ul>
-        <li><a href="demande_en_cours.html">Demande en cours</a></li> <!-- sinon on voit plus "acceuil" ds le menu qd on est dans acceuil -->         
-        <li><a href="etu_creer_demande.html">Creer une demande</a></li>
-        <li><a href="etu_modif_demande.html">Modifier</a></li>
-        <li><a href="messagerie.html">Messagerie</a></li>
-        <li><a href="page_connexion.html">Deconnexion</a>
+        <li><a href="page_0.inc.php">Demande en cours</a></li> <!-- sinon on voit plus "acceuil" ds le menu qd on est dans acceuil -->         
+        <li><a href="page_1.inc.php">Creer une demande</a></li>
+        <li><a href="page_2.inc.php">Modifier</a></li>
+        <li><a href="page_3.inc.php">Messagerie</a></li>
+        <li><a href="page_4.inc.php">Deconnexion</a>
 
         </li>
         
