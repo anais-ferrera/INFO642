@@ -1,7 +1,17 @@
 <?php
+echo'
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Modifier</title>
+        <link rel="stylesheet" type="text/css" href="Style.css">
+    </head>
 
 
-include ("connexion_bdd.php");
+    <body>
+        <div id="contenu">';
+        include ("connexion_bdd.php");
 
 
 $sql ="SELECT id_demande,description, etat FROM Demande";
@@ -12,26 +22,26 @@ echo '<h2>Demandes<br/></h2>';
 echo '<form method="post" action="prof_verif.php">';
 
 echo' 
-	<table border="1">
-	<tr>
+    <table border="1">
+    <tr>
     <th>ID</th>
-	<th>Demande</th> 
-	<th>Etat</th>
-	</tr>';
-	
+    <th>Demande</th> 
+    <th>Etat</th>
+    </tr>';
+    
     while($row =mysql_fetch_assoc($result)) {
     $id_demande=$row["id_demande"];
     $description=$row["description"];
     $etat=$row["etat"];
     //}
-	echo'<tr>';
+    echo'<tr>';
     
         //while($row =mysql_fetch_assoc($result)) {
             echo"<td>$id_demande</td>";
             //echo"<td><input type='hidden' name='demande' value='".$id_demande."' /></td>";
             echo"<td>$description</td>";
             echo"<td>$etat</td>";
-        	//echo'<td>'.$row["description"].'</td>';
+            //echo'<td>'.$row["description"].'</td>';
             //echo'<td>'.$row["etat"].'</td>';
             
        echo'</tr>';
@@ -48,7 +58,16 @@ $result2 = mysql_query($sql2) or die("Requête invalide: ". mysql_error()."\n".$
     //Bouton qui permet de selectionner une demande
     echo'<input type="submit" name="selectionner" value="Selectionner" />';
 
-    echo'</form>'; 
+    echo'</form> 
+
+
+
+        </div>
+    </body>
+
+</html>';
+
+
 
 
 ?>

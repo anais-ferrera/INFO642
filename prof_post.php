@@ -1,20 +1,4 @@
 <?php
-echo'
-<!DOCTYPE html>
-<html>
-
-    <head>
-        <title>Modifier</title>
-        <link rel="stylesheet" type="text/css" href="Style.css">
-    </head>
-
-
-    <body>
-
-        
-        
-
-        <div id="contenu">';
 
 
 include ("connexion_bdd.php");
@@ -25,7 +9,7 @@ $result = mysql_query($sql) or die("Requête invalide: ". mysql_error()."\n".$sq
 echo '<h2>Demandes<br/></h2>';
 
 //On cree un formulaire avec la methode post
-echo '<form method="post" action="st_post.php">';
+echo '<form method="post" action="prof_verif.php">';
 
 echo' 
 	<table border="1">
@@ -53,8 +37,8 @@ echo'
        echo'</tr>';
     }
     echo'</table>';
-    $sql2 ="SELECT id_demande FROM Demande WHERE etat='enAttenteDuST'";
-    $result2 = mysql_query($sql2) or die("Requête invalide: ". mysql_error()."\n".$sql);
+$sql2 ="SELECT id_demande FROM Demande";
+$result2 = mysql_query($sql2) or die("Requête invalide: ". mysql_error()."\n".$sql);
     echo '<label>Selectionner une demande</label> : <select name="demande" size="1">';
     while($row2 =mysql_fetch_assoc($result2)) {
             echo '<option value='.$row2["id_demande"].'>'.$row2["id_demande"].'</option>';
@@ -64,10 +48,7 @@ echo'
     //Bouton qui permet de selectionner une demande
     echo'<input type="submit" name="selectionner" value="Selectionner" />';
 
-    echo'</form>
-            </div>
-    </body>
-</html>'; 
+    echo'</form>'; 
 
 
 ?>

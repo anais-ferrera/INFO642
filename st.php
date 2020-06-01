@@ -1,20 +1,4 @@
 <?php
-echo'
-<!DOCTYPE html>
-<html>
-
-    <head>
-        <title>Modifier</title>
-        <link rel="stylesheet" type="text/css" href="Style.css">
-    </head>
-
-
-    <body>
-
-        
-        
-
-        <div id="contenu">';
 
 
 include ("connexion_bdd.php");
@@ -64,10 +48,7 @@ echo'
     //Bouton qui permet de selectionner une demande
     echo'<input type="submit" name="selectionner" value="Selectionner" />';
 
-    echo'</form>
-            </div>
-    </body>
-</html>'; 
+    echo'</form>'; 
 
 
 ?>
