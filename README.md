@@ -2,11 +2,11 @@
 
 ## Projet réalisé dans le cadre du cours INFO642 - Bases de données et Technologies Web 
 
-Cette application web a été réalisé sur le serveur de l'école.
-Nous avons donc utilisé le VPN.
+Ce site web est hebergé sur le serveur de l'école.
+Il faut donc utiliser le VPN pour y avoir accès.
 
 Pour se rendre sur le site, il suffit de suivre le lien suivant : 
-Url : http://tp-epu.univ-savoie.fr/~ferreraa/INFO642/accueil.php
+* Url : http://tp-epu.univ-savoie.fr/~ferreraa/INFO642/accueil.php
 
 Les adresses mail et mot de passe:
   * Si c'est un étudiant:
