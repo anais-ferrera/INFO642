@@ -10,18 +10,18 @@ Url : http://tp-epu.univ-savoie.fr/~ferreraa/INFO642/accueil.php
 
 Les adresses mail et mot de passe:
   * Si c'est un étudiant:
-      mail : johnDupont@gmail.com 
-      mdp : motdepasse
+       - mail : johnDupont@gmail.com 
+       - mdp : motdepasse
       
-      mail : marieDeschamps@gmail.com
-      mdp : mdpetu
+       - mail : marieDeschamps@gmail.com
+       - mdp : mdpetu
   
   * Si c'est un enseignant:
-      mail : claireDelamare@gmail.com
-      mdp : monmotdepasse
+       - mail : claireDelamare@gmail.com
+       - mdp : monmotdepasse
   
   * Si c'est une personne du service technique:
-      mail : st1@gmail.com
-      mdp : mdpst1      
+       - mail : st1@gmail.com
+       - mdp : mdpst1      
 
 ### Projet en collaboration avec @saphya-el-ouahabi @Elsa-R @camilleyh11 @anais-ferrera
